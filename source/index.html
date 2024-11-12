@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html lang="ru" data-validate="html">
 
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SUPERGYM</title>
-    <link rel="stylesheet" href="sass/style.scss">
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SUPERGYM</title>
+  <link rel="stylesheet" href="sass/style.scss">
+</head>
 
-  <body class="page-body">
-    <!-- пример использования спрайта -->
-    <img src="/__spritemap#sprite-logo-view" alt="Это спрайт">
+<body class="page-body">
+  <!-- пример использования спрайта -->
+  <!-- <img src="/__spritemap#sprite-logo-view" alt="Это спрайт">
     <svg>
       <use href="/__spritemap#sprite-user"></use>
-    </svg>
-    <!-- примеры требуемых атрибутов data-test="*" -->
-    <div data-test="hero">hero</div>
+    </svg> -->
+  <!-- примеры требуемых атрибутов data-test="*" -->
+  <!-- <div data-test="hero">hero</div>
     <div data-test="about">about</div>
     <div data-test="price">price</div>
     <div data-test="games">games</div>
@@ -25,8 +25,104 @@
     <div data-test="faq">faq</div>
     <div data-test="reviews">reviews</div>
     <div data-test="form">form</div>
-    <div data-test="footer">footer</div>
-    <script type="module" src="js/main.js"></script>
-  </body>
+    <div data-test="footer">footer</div> -->
+  <header class="header">
+    <div class="header__container container">
+      <img class="header__logo" src="./img/logo.svg" alt="SUPERGYM." width="130" height="28">
+      <a class="header__link-phone" href="tel:88005555555">
+        8 800 555-55-55
+      </a>
+    </div>
+  </header>
+  <main>
+    <section class="hero" data-test="hero">
+      <div class="hero__container container">
+        <div class="hero__content">
+          <span class="hero__city">
+            Омск
+          </span>
+          <div class="hero__wrapper">
+            <h1 class="hero__title">
+              ФИТНЕС ЦЕНТР
+            </h1>
+            <ul class="hero__list">
+              <li class="hero__item">
+                Тренажёрный зал
+              </li>
+              <li class="hero__item">
+                Групповые занятия
+              </li>
+              <li class="hero__item">
+                Кардио-зона
+              </li>
+            </ul>
+          </div>
+          <a class="hero__btn btn btn--white" href="#price">
+            Купить абонемент
+          </a>
+        </div>
+        <div class="hero__image">
+          <picture>
+            <source media="(max-width: 1023px)" width="324" height="390" type="image/jpeg"
+              srcset="img/hero-img-tablet.jpg 1x, img/hero-img-tablet@2x.jpg 2x">
+            <img src="img/hero-img.jpg" srcset="img/hero-img@2x.jpg 2x" alt="Мужчина SUPERMEN." width="500"
+              height="524">
+          </picture>
+        </div>
+      </div>
+    </section>
+    <section class="about">
+      <div class="about__container container">
+        <div class="about__wrapper">
+          <h2 class="about__title title">
+            Тренажёрный зал
+          </h2>
+          <span class="about__sup-title">
+            Просторный зал площадью 900 кв/м
+          </span>
+          <div class="about__content">
+            <p>
+              Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья.
+              Тренажёрный зал оснащён всем необходимым современным оборудованием для всех спортсменов.
+            </p>
+            <p>
+              В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажёрами. Также в фитнес центре есть
+              несколько оборудованных залов для различных видов групповых занятий.
+            </p>
+          </div>
+        </div>
+        <div class="about__media">
+          <picture>
+            <source media="(max-width: 767px)" width="320" height="280" type="image/jpeg"
+              srcset="img/gym-mobile.jpg 1x, img/gym-mobile@2x.jpg 2x">
+            <source media="(max-width: 1023px)" width="768" height="345" type="image/jpeg"
+              srcset="img/gym-tablet.jpg 1x, img/gym-tablet@2x.jpg 2x">
+            <img class="about__img" src="img/gym.jpg" srcset="img/gym@2x.jpg 2x" alt="Спортивный зал." width="660"
+              height="400">
+          </picture>
+          <div class="about__video">
+            <!-- заменить ссылку на видео -->
+
+            <a class="about__video-link" href="https://youtu.be/9TZXsZItgdw">
+              <picture>
+                <source media="(max-width: 767px)" width="320" height="170" type="image/jpeg"
+                  srcset="img/video-mobile.jpg 1x, img/video-mobile@2x.jpg 2x">
+                <source media="(max-width: 1023px)" width="270" height="170" type="image/jpeg"
+                  srcset="img/video-tablet.jpg 1x, img/video-tablet@2x.jpg 2x">
+                <img class="about__video-picture" src="img/video.jpg" srcset="img/video@2x.jpg 2x" alt="обложка видео."
+                  width="360" height="230">
+              </picture>
+            </a>
+            <button class="about__video-icon" aria-label="Запустить видео.">
+
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer></footer>
+  <script type="module" src="js/main.js"></script>
+</body>
 
 </html>

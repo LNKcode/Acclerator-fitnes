@@ -1,0 +1,160 @@
+.hero {
+  background: linear-gradient(90deg, #1C3477 0%, #1C3477 0.01%, #1A3578 39.11%, #73184B 75.5%, #B4022A 100%);
+  color: #ffffff;
+  padding-top: 116px;
+  padding-bottom: 120px;
+}
+
+.hero__city {
+  display: block;
+  font-size: 54px;
+  line-height: 54px;
+  font-family: $second-font;
+  font-weight: 600;
+  color: #ffffff;
+  text-align: right;
+}
+
+.hero__title {
+  font-family: $second-font;
+  font-weight: 800;
+  font-size: 92px;
+  line-height: 110px;
+  letter-spacing: 4px;
+  color: #ffffff;
+  text-align: right;
+  width: 270px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.hero__list {
+  @include list;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  text-align: right;
+  width: 115px;
+  margin-top: 12px;
+}
+
+.hero__wrapper {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+
+.hero__container {
+  display: flex;
+  justify-content: center;
+  gap: 56px;
+}
+
+.hero__btn {
+  display: block;
+  margin-left: auto;
+  width: 270px;
+
+}
+
+.hero__content {
+  padding-left: 75px;
+  padding-top: 52px;
+}
+
+@media (max-width: $tablet-width) {
+  .hero {
+    padding-top: 84px;
+    padding-bottom: 100px;
+  }
+
+  .hero__city {
+    font-size: 42px;
+    line-height: 42px;
+  }
+
+  .hero__title {
+    font-size: 72px;
+    line-height: 85px;
+    letter-spacing: 2px;
+    width: 185px;
+    margin-top: 10px;
+    margin-bottom: 50px;
+  }
+
+  .hero__list {
+    font-size: 14px;
+    line-height: 22px;
+    width: 139px;
+    padding-right: 26px;
+  }
+
+  .hero__container {
+    gap: 30px;
+  }
+
+  .hero__btn {
+    width: 185px;
+    font-size: 12px;
+    line-height: 12px;
+    padding: 20px;
+  }
+
+  .hero__image {
+    img {
+      width: 324px;
+      height: 390px;
+      object-fit: cover;
+    }
+  }
+
+  .hero__content {
+    padding-top: 31px;
+    padding-left: 0;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .hero__image {
+    display: none;
+  }
+
+  .hero {
+    padding-top: 72px;
+    padding-bottom: 31px;
+  }
+
+  .hero__city {
+    font-size: 32px;
+    line-height: 32px;
+  }
+
+  .hero__title {
+    font-size: 62px;
+    line-height: 62px;
+    letter-spacing: 1px;
+    margin-top: 14px;
+    margin-bottom: 48px;
+    width: 177px;
+  }
+
+  .hero__list {
+    width: auto;
+    padding-right: 0;
+    line-height: 20px;
+    margin-top: 30px;
+  }
+
+  .hero__btn {
+    width: 100%;
+    padding: 22px;
+  }
+
+  .hero__container {
+    display: block;
+  }
+
+  .hero__wrapper {
+    justify-content: space-between;
+  }
+}

@@ -8,9 +8,9 @@ function findVideos() {
 
 function setupVideo(video) {
   const link = video.querySelector('.about__video-link');
-  const media = video.querySelector('.about__video-picture');
+  const linkHref = link.getAttribute('href');
   const button = video.querySelector('.about__video-icon');
-  const id = parseMediaURL(media);
+  const id = convertToEmbedURL(linkHref);
 
   video.addEventListener('click', () => {
     const iframe = createIframe(id);
@@ -23,12 +23,18 @@ function setupVideo(video) {
   video.classList.add('video--enabled');
 }
 
-function parseMediaURL(media) {
-  const regexp = /https:\/\/i\.ytimg\.com\/vi\/([a-zA-Z0-9_-]+)\/maxresdefault\.jpg/i;
-  const url = media.src;
-  const match = url.match(regexp);
-
-  return match[1];
+function convertToEmbedURL(url) {
+  // Проверяем, что ссылка начинается с короткого формата
+  if (url.startsWith('https://youtu.be/')) {
+    // Извлекаем ID видео, который идет после "https://youtu.be/"
+    const videoId = url.split('youtu.be/')[1];
+    // Формируем новую ссылку с embed и параметром autoplay=1
+    return `https://www.youtube.com/embed/${videoId}?autoplay=1`;
+  } else {
+    // Если формат ссылки не тот, возвращаем исходную ссылку или предупреждение
+    console.error('Неправильный формат ссылки');
+    return url;
+  }
 }
 
 function createIframe(id) {
@@ -36,18 +42,11 @@ function createIframe(id) {
 
   iframe.setAttribute('allowfullscreen', '');
   iframe.setAttribute('allow', 'autoplay');
-  iframe.setAttribute('src', generateURL(id));
+  iframe.setAttribute('src', id);
   iframe.classList.add('about__video-picture');
 
   return iframe;
 }
-
-function generateURL(id) {
-  const query = '?rel=0&showinfo=0&autoplay=1';
-
-  return 'https://www.youtube.com/embed/' + id + query;
-}
-
 
 export {findVideos};
 

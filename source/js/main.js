@@ -3,5 +3,10 @@
 // import {Navigation, Pagination} from "swiper/modules";
 // import 'swiper/css';
 import {findVideos} from './video.js';
+import {toggleTabs} from './toggle-tabs.js';
 
-// findVideos();
+
+document.addEventListener('DOMContentLoaded', ()=> {
+  findVideos();
+  toggleTabs();
+});

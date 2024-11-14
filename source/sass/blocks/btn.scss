@@ -47,3 +47,43 @@
   }
 }
 
+.btn--dark {
+  color: #102654;
+  border: none;
+  outline: 2px solid #102654;
+
+  &:hover {
+    color: #ffffff;
+    background: linear-gradient(97.05deg, #ED0233 17.6%, #003EB7 95.31%);
+    outline: none;
+  }
+
+  &:focus-visible {
+    outline-color: #000000;
+    color: #ffffff;
+    background: linear-gradient(97.05deg, rgba(237, 2, 51, 0.8) 17.6%, rgba(0, 62, 183, 0.8) 95.31%);
+    outline-offset: 0;
+  }
+
+  &:active {
+    background: linear-gradient(97.05deg, #ED0233 17.6%, #003EB7 95.31%);
+    color: rgba(255, 255, 255, 0.7);
+    border-color: transparent;
+    outline: none;
+  }
+
+  &.btn--disabled,
+  &:disabled,
+  &.btn--disabled:hover,
+  &:disabled:hover,
+  &.btn--disabled:active,
+  &:disabled:active,
+  &.btn--disabled:focus-visible,
+  &:disabled:focus-visible {
+    background: transparent;
+    color: #ffffff;
+    outline-color: #ffffff;
+    opacity: 0.5;
+  }
+}
+

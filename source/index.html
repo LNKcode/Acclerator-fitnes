@@ -71,7 +71,7 @@
         </div>
       </div>
     </section>
-    <section class="about">
+    <section class="about" data-test="about">
       <div class="about__container container">
         <div class="about__wrapper">
           <h2 class="about__title title">
@@ -114,7 +114,7 @@
                   width="360" height="230">
               </picture>
             </a>
-            <button class="about__video-icon" aria-label="Запустить видео.">
+            <button class="about__video-icon" type="button" aria-label="Запустить видео.">
 
             </button>
           </div>
@@ -157,7 +157,7 @@
                 <span class="price__price" data-shadow="5000">
                   <span>5000</span>
                   <svg class="price__rub" width="30" height="42" viewBox="0 0 30 42">
-                    <use href="/__spritemap#sprite-rub">
+                    <use href="/__spritemap#sprite-rub" />
                   </svg>
                 </span>
 
@@ -175,7 +175,7 @@
                 <span class="price__price" data-shadow="1700">
                   <span>1700</span>
                   <svg class="price__rub" width="30" height="42" viewBox="0 0 30 42">
-                    <use href="/__spritemap#sprite-rub">
+                    <use href="/__spritemap#sprite-rub" />
                   </svg>
                 </span>
                 <a class="price__link btn btn--dark" href="#">
@@ -192,7 +192,7 @@
                 <span class="price__price" data-shadow="2700">
                   <span>2700</span>
                   <svg class="price__rub" width="30" height="42" viewBox="0 0 30 42">
-                    <use href="/__spritemap#sprite-rub">
+                    <use href="/__spritemap#sprite-rub" />
                   </svg>
                 </span>
                 <a class="price__link btn btn--dark" href="#">
@@ -212,7 +212,7 @@
                 <span class="price__price" data-shadow="30000">
                   <span>30000</span>
                   <svg class="price__rub" width="30" height="42" viewBox="0 0 30 42">
-                    <use href="/__spritemap#sprite-rub">
+                    <use href="/__spritemap#sprite-rub" />
                   </svg>
                 </span>
 
@@ -230,7 +230,7 @@
                 <span class="price__price" data-shadow="10200">
                   <span>10200</span>
                   <svg class="price__rub" width="30" height="42" viewBox="0 0 30 42">
-                    <use href="/__spritemap#sprite-rub">
+                    <use href="/__spritemap#sprite-rub" />
                   </svg>
                 </span>
                 <a class="price__link btn btn--dark" href="#">
@@ -247,7 +247,7 @@
                 <span class="price__price" data-shadow="16200">
                   <span>16200</span>
                   <svg class="price__rub" width="30" height="42" viewBox="0 0 30 42">
-                    <use href="/__spritemap#sprite-rub">
+                    <use href="/__spritemap#sprite-rub" />
                   </svg>
                 </span>
                 <a class="price__link btn btn--dark" href="#">
@@ -267,7 +267,7 @@
                 <span class="price__price" data-shadow="60000">
                   <span>60000</span>
                   <svg class="price__rub" width="30" height="42" viewBox="0 0 30 42">
-                    <use href="/__spritemap#sprite-rub">
+                    <use href="/__spritemap#sprite-rub" />
                   </svg>
                 </span>
 
@@ -285,7 +285,7 @@
                 <span class="price__price" data-shadow="20400">
                   <span>20400</span>
                   <svg class="price__rub" width="30" height="42" viewBox="0 0 30 42">
-                    <use href="/__spritemap#sprite-rub">
+                    <use href="/__spritemap#sprite-rub" />
                   </svg>
                 </span>
                 <a class="price__link btn btn--dark" href="#">
@@ -302,7 +302,7 @@
                 <span class="price__price" data-shadow="32400">
                   <span>32400</span>
                   <svg class="price__rub" width="30" height="42" viewBox="0 0 30 42">
-                    <use href="/__spritemap#sprite-rub">
+                    <use href="/__spritemap#sprite-rub" />
                   </svg>
                 </span>
                 <a class="price__link btn btn--dark" href="#">
@@ -311,6 +311,65 @@
               </li>
             </ul>
           </div>
+        </div>
+      </div>
+    </section>
+    <section class="games" data-test="games">
+      <div class="games__container container">
+        <div class="games__content">
+          <div class="games__content-top">
+            <h2 class="games__title">
+              SUPER<br> GAMES
+            </h2>
+            <div class="games__wrapper">
+              <div class="games__data-time">
+                <p class="games__desc">
+                  Дата
+                </p>
+                <div class="games__data-wrapper">
+                  <span>
+                    7
+                  </span>
+                  <div class="games__column">
+                    <p class="games__desc-data">
+                      Марта
+                    </p>
+                    <p class="games__desc-data">
+                      2019
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="games__data-time">
+                <p class="games__desc">
+                  Время
+                </p>
+                <span>
+                  12:00
+                </span>
+              </div>
+            </div>
+          </div>
+          <p class="games__description">
+            Ежегодные соревнования по CrossFit
+          </p>
+          <a class="games__link btn btn--white" href="#">
+            заполнить заявку
+          </a>
+        </div>
+        <div class="games__image">
+          <picture>
+            <source media="(max-width: 767px)" width="290" height="290" type="image/webp"
+              srcset="img/games-mobile.webp 1x, img/games-mobile@2x.webp 2x">
+            <source media="(max-width: 1023px)" width="378" height="348" type="image/webp"
+              srcset="img/games-tablet.webp 1x, img/games-tablet@2x.webp 2x">
+            <source width="660" height="500" type="image/webp" srcset="img/games.webp 1x, img/games@2x.webp 2x">
+            <source media="(max-width: 767px)" width="290" height="290" type="image/jpeg"
+              srcset="img/games-mobile.jpg 1x, img/games-mobile@2x.jpg 2x">
+            <source media="(max-width: 1023px)" width="378" height="348" type="image/jpeg"
+              srcset="img/games-tablet.jpg 1x, img/games-tablet@2x.jpg 2x">
+            <img src="img/games.jpg" srcset="img/games@2x.jpg 2x" alt="Мужчина в магнезии." width="660" height="500">
+          </picture>
         </div>
       </div>
     </section>

@@ -1,6 +1,7 @@
 // Vendor
 // ---------------------------------
 @import "vendor/normalize";
+@import "./vendor/swiper.scss";
 
 // common
 @import "./common/variables.scss";
@@ -15,6 +16,8 @@
 @import "./blocks/games.scss";
 @import "./blocks/header.scss";
 @import "./blocks/hero.scss";
+@import "./blocks/juri-card.scss";
+@import "./blocks/juri.scss";
 @import "./blocks/price.scss";
 @import "./blocks/title.scss";
 

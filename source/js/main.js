@@ -4,9 +4,11 @@
 // import 'swiper/css';
 import {findVideos} from './video.js';
 import {toggleTabs} from './toggle-tabs.js';
+import {swiperJs} from './juri-slider.js';
 
 
 document.addEventListener('DOMContentLoaded', ()=> {
   findVideos();
   toggleTabs();
+  swiperJs();
 });

@@ -1,0 +1,48 @@
+.juri__btn{
+  display: block;
+  position: absolute;
+  width: 16px;
+  height: 32px;
+  padding: 0;
+  background: transparent;
+  border: none;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  cursor: pointer;
+
+  &::before {
+    @include pseudo;
+    width: 16px;
+    height: 32px;
+    top: 0;
+    left: 0;
+    background-image: url("/__spritemap#sprite-arrow");
+  }
+
+  &--next {
+    right: -52px;
+
+    &::before {
+      transform: rotate(180deg);
+    }
+  }
+
+  &--prev {
+    left: -52px;
+  }
+}
+
+.juri__slider-wrapper {
+  height: auto;
+}
+
+.juri__slider {
+  position: relative;
+}
+
+.juri__container {
+  padding-left: 60px;
+  padding-right: 60px;
+  max-width: 1280px;
+}

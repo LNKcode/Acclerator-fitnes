@@ -1,5 +1,6 @@
 .games__container {
   display: flex;
+  padding-top: 100px;
 }
 
 .games__content {
@@ -35,18 +36,33 @@
   font-size: 18px;
   margin: 0;
   border-bottom: 1px solid #ffffff;
+  padding-bottom: 5px;
+  text-align: left;
+  margin-bottom: 4px;
 }
 
 .games__data-time {
   span {
+    display: inline-block;
     font-weight: 700;
     font-size: 40px;
     line-height: 40px;
+    padding-right: 3px;
+    padding-top: 2px;
+  }
+
+  &:first-child {
+    margin-bottom: 19px;
   }
 }
 
 .games__data-wrapper {
   display: flex;
+  gap: 2px;
+
+  span {
+    padding-top: 4px;
+  }
 }
 
 .games__desc-data {
@@ -54,13 +70,23 @@
   font-size: 14px;
   line-height: 22px;
   margin: 0;
+
+  &--year {
+    margin-top: 3px;
+  }
 }
 
 .games__description {
   font-size: 18px;
   line-height: 24px;
+  margin-top: 29px;
+  margin-bottom: 32px;
 }
 
 .games__link {
   width: 100%;
+}
+
+@media (max-width: $tablet-width) {
+
 }

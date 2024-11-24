@@ -6,7 +6,7 @@
   padding: 0;
   background: transparent;
   border: none;
-  top: 50%;
+  top: calc(50% - 3px);
   transform: translateY(-50%);
   z-index: 2;
   cursor: pointer;
@@ -21,7 +21,7 @@
   }
 
   &--next {
-    right: -52px;
+    right: -55px;
 
     &::before {
       transform: rotate(180deg);
@@ -45,4 +45,23 @@
   padding-left: 60px;
   padding-right: 60px;
   max-width: 1280px;
+}
+
+.juri__title {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 46px;
+}
+
+.juri {
+  padding-top: 127px;
+  padding-bottom: 40px;
+}
+
+
+@media (max-width: $tablet-width) {
+  .juri__container {
+    padding-right: 103px;
+    padding-left: 103px;
+  }
 }

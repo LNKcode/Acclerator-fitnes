@@ -85,6 +85,14 @@
   .price__item-buy {
     background-color: #ffffff;
     padding: 65px 18.34%;
+    border: 7px solid #ffffff;
+
+    &:hover,
+    &:focus-within {
+
+      border-image-source: linear-gradient(136deg, #d10a42 0%, #00359f 100%);
+      border-image-slice: 1;
+    }
   }
 
   .price__link {

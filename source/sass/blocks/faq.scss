@@ -1,0 +1,131 @@
+.faq {
+  background-color: #f8f9fc;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.faq__btn-list {
+  @include list;
+}
+
+.faq__btn-tab {
+  display: block;
+  border: none;
+  outline: 1px solid rgba(16, 38, 84, 0.2);
+  background-color: transparent;
+  padding: 18px;
+  width: 260px;
+  margin-bottom: 10px;
+  font-weight: 400;
+  color: #102654;
+  font-size: 18px;
+  line-height: 18px;
+}
+
+.faq__btn-tab.is-active {
+  border: none;
+  outline: none;
+  color: #ffffff;
+  background: linear-gradient(97.05deg, #ED0233 17.6%, #003EB7 95.31%);
+}
+
+.faq__wrapper {
+  display: flex;
+  gap: 40px;
+}
+
+.faq__content-list {
+  @include list;
+  display: none;
+
+  &.is-active {
+    display: block;
+  }
+}
+
+.faq__content-item {
+  border-bottom: 1px solid #74819C;
+  padding-top: 23px;
+  padding-bottom: 23px;
+
+  &:first-child {
+    border-top: 1px solid #74819C;
+  }
+}
+
+.faq__inner {
+  display: flex;
+  justify-content: space-between;
+
+  h3 {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 24px;
+    color: #102654;
+    margin: 0;
+  }
+}
+
+.faq__content {
+  flex-grow: 1;
+}
+
+.faq__content-wrapper {
+  max-width: 660px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+  p {
+    font-size: 18px;
+    color: #102654;
+  }
+}
+
+.faq__btn {
+  position: relative;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  background: #ffffff;
+  border: 1px solid #1c3374;
+  cursor: pointer;
+
+  &::after {
+    @include pseudo;
+    width: 20px;
+    height: 1px;
+    background-color: #1c3374;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &::before {
+    @include pseudo;
+    width: 1px;
+    height: 20px;
+    background-color: #1c3374;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+
+.active-accordion {
+  .faq__content-wrapper {
+    max-height: 100%;
+  }
+  .faq__btn {
+    background-color: #1c3374;
+    &::before {
+      display: none;
+    }
+
+    &::after {
+      background-color: #ffffff;
+    }
+  }
+}
+

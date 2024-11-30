@@ -232,13 +232,13 @@
 @media (max-width: $mobile-width) {
   .faq__btn-list {
     grid-template-columns: repeat(2, 1fr);
-    gap: 11px 10px;
+    gap: 12px;
     margin-bottom: 36px;
   }
 
   .faq {
-    padding-top: 70px;
-    padding-bottom: 71px;
+    padding-top: 71px;
+    padding-bottom: 70px;
   }
 
   .faq__title {
@@ -248,8 +248,8 @@
   .faq__btn-tab {
     font-size: 16px;
     line-height: 16px;
-    padding-top: 13px;
-    padding-bottom: 16px;
+    padding-top: 15px;
+    padding-bottom: 13px;
   }
 
   .faq__inner {
@@ -265,7 +265,7 @@
     p {
       font-size: 16px;
       line-height: 20px;
-      padding-top: 19px;
+      padding-top: 20px;
     }
   }
 

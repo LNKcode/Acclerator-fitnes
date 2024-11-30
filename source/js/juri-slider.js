@@ -2,7 +2,7 @@ import Swiper from 'swiper';
 import { Navigation } from 'swiper/modules';
 
 
-function swiperJs () {
+function swiperJs() {
   const swiper = new Swiper('.juri .swiper', {
     modules: [Navigation],
     slidesPerView: 1,
@@ -25,4 +25,4 @@ function swiperJs () {
   });
 }
 
-export {swiperJs};
+export { swiperJs };

@@ -54,6 +54,8 @@
 
 .offers__link-white {
   align-self: flex-start;
+  display: inline-block;
+  position: relative;
   color: #ffffff;
   font-weight: 700;
   font-size: 14px;
@@ -62,6 +64,33 @@
   border-bottom: 1px solid #ffffff;
   margin-top: auto;
   padding-bottom: 5px;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:focus-visible {
+    outline: none;
+    border-color: transparent;
+
+    &::before {
+      @include pseudo;
+      border: 1px solid #ffffff;
+      bottom: -3px;
+      top: -10px;
+      right: -10px;
+      left: -10px;
+    }
+  }
+
+  &:active {
+    opacity: 1;
+  }
+
+  &:disabled,
+  &--disabled {
+    opacity: 0.5;
+  }
 }
 
 .offers__card {
@@ -69,7 +98,7 @@
   flex-direction: column;
   min-height: 174px;
   border: 7px solid;
-  border-image: linear-gradient(148.82deg, #D10A42 0.85%, #00359F 100%);
+  border-image: linear-gradient(148.82deg, #d10a42 0.85%, #00359f 100%);
   border-image-slice: 1;
   padding: 20px;
 
@@ -99,6 +128,8 @@
 
 .offers__link-dark {
   align-self: flex-start;
+  display: inline-block;
+  position: relative;
   color: #1c3374;
   font-weight: 700;
   font-size: 14px;
@@ -107,10 +138,36 @@
   border-bottom: 1px solid #1c3374;
   margin-top: auto;
   padding-bottom: 5px;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:focus-visible {
+    outline: none;
+    border-color: transparent;
+
+    &::before {
+      @include pseudo;
+      border: 1px solid #1c3374;
+      bottom: -3px;
+      top: -10px;
+      right: -10px;
+      left: -10px;
+    }
+  }
+
+  &:active {
+    opacity: 1;
+  }
+
+  &:disabled,
+  &--disabled {
+    opacity: 0.5;
+  }
 }
 
 @media (max-width: $tablet-width) {
-
   .offers {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -158,7 +215,6 @@
 }
 
 @media (max-width: $mobile-width) {
-
   .offers {
     text-align: center;
     padding-top: 40px;

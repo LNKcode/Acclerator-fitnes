@@ -1178,26 +1178,44 @@
         <div class="reviews__wrapper">
           <div class="swiper">
             <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <div class="reviews__img">
-                  <img src="#" alt="Фотография комментатора.">
+              <div class="swiper-slide reviews__slide">
+                <div class="reviews__profile">
+                  <picture>
+                    <source media="(max-width: 767px)" width="68" height="68" type="image/webp"
+                      srcset="img/user-profile-mobile.webp 1x, img/user-profile-mobile@2x.webp 2x">
+                    <source media="(max-width: 1023px)" width="80" height="80" type="image/webp"
+                      srcset="img/user-profile-tablet.webp 1x, img/user-profile-tablet@2x.webp 2x">
+                    <source width="80" height="80" type="image/webp"
+                      srcset="img/user-profile.webp 1x, img/user-profile@2x.webp 2x">
+                    <source media="(max-width: 767px)" width="68" height="68" type="image/jpeg"
+                      srcset="img/user-profile-mobile.jpg 1x, img/user-profile-mobile@2x.jpg 2x">
+                    <source media="(max-width: 1023px)" width="80" height="80" type="image/jpeg"
+                      srcset="img/user-profile-tablet.jpg 1x, img/user-profile-tablet@2x.jpg 2x">
+                    <img src="./img/user-profile.jpg" srcset="./img/user-profile@2x 2x" alt="Фотография комментатора."
+                      width="80" height="80">
+                  </picture>
+                </div>
+                <div class="reviews__content">
+                  <h3>
+                    Анна Орлова
+                  </h3>
+                  <p>
+                    «Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто, тренажёры обновляют, персонал
+                    дружелюбный. Зал просторный, даже в вечернее время нет очередей»
+                  </p>
                 </div>
               </div>
               <div class="swiper-slide">Slide 2
 
               </div>
-              <div class="swiper-slide">Slide 3</div>
-              <div class="swiper-slide">Slide 4</div>
-              <div class="swiper-slide">Slide 5</div>
-              <div class="swiper-slide">Slide 6</div>
-              <div class="swiper-slide">Slide 7</div>
-              <div class="swiper-slide">Slide 8</div>
-              <div class="swiper-slide">Slide 9</div>
             </div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
           </div>
+          <button class="swiper-button-next reviews__btn reviews__btn--next" type="button"
+            aria-label="Следующий."></button>
+          <button class="swiper-button-prev reviews__btn reviews__btn--prev" type="button"
+            aria-label="Предыдущий."></button>
         </div>
+
 
       </div>
     </section>

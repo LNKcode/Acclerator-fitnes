@@ -75,14 +75,31 @@
     gap: 30px;
   }
 
+  .footer__item {
+    margin-top: 1px;
+
+    &:first-child {
+      padding-right: 1px;
+    }
+
+    &:last-child {
+      padding-left: 1px;
+    }
+  }
+
   .footer__logo {
     width: 110px;
     height: 22px;
+    margin-bottom: 1px;
   }
 
   .footer {
     padding-top: 40px;
     padding-bottom: 42px;
+  }
+
+  .footer__social {
+    margin-top: 2px;
   }
 }
 

@@ -10,22 +10,21 @@
     font-weight: 700;
     font-size: 70px;
     line-height: 70px;
-    background: linear-gradient(127.61deg, #D10A42 0%, #0041CA 45.58%);
-    -webkit-background-clip: text; /* Устанавливает область отображения фона */
+    background: linear-gradient(127.61deg, #d10a42 0%, #0041ca 45.58%);
+    background-clip: text; /* Устанавливает область отображения фона */
     -webkit-text-fill-color: transparent; /* Делает текст прозрачным, чтобы показать фон */
     margin: 0;
   }
 
   span {
     display: block;
-    color: #2E35AC;
+    color: #2e35ac;
     font-weight: 400;
     line-height: 22px;
     font-size: 14px;
     margin: 0;
   }
 }
-
 
 .features__card {
   display: flex;
@@ -66,7 +65,7 @@
 }
 
 .features__blue-box {
-  background-color: #1C3374;
+  background-color: #1c3374;
   padding: 58px 40px;
   color: #ffffff;
   text-align: center;
@@ -100,9 +99,7 @@
   margin-bottom: 49px;
 }
 
-
 @media (max-width: $tablet-width) {
-
   .features {
     padding-top: 25px;
     padding-bottom: 60px;
@@ -114,7 +111,6 @@
   }
 
   .features__content {
-
     max-width: 240px;
     margin-left: 15px;
 
@@ -124,7 +120,6 @@
       margin-bottom: 12px;
     }
   }
-
 
   .features__blue-box {
     grid-column: 1 / 3;
@@ -158,9 +153,7 @@
   }
 }
 
-
 @media (max-width: $mobile-width) {
-
   .features {
     padding-top: 14px;
     padding-bottom: 5px;
@@ -185,10 +178,19 @@
   .features__content {
     margin-left: 0;
     max-width: 100%;
+    padding: 0 30px;
+
+    h3 {
+      font-size: 18px;
+    }
+
+    p {
+      font-size: 14px;
+      line-height: 22px;
+    }
   }
 
   .features__inner {
-
     margin-bottom: 12px;
 
     p {
@@ -198,19 +200,6 @@
 
     span {
       line-height: 20px;
-    }
-  }
-
-  .features__content {
-
-    padding:0 30px;
-
-    h3 {
-      font-size: 18px;
-    }
-    p {
-      font-size: 14px;
-      line-height: 22px;
     }
   }
 
@@ -228,11 +217,13 @@
       line-height: 64px;
       margin-bottom: 5px;
     }
+
     h3 {
       font-size: 22px;
       line-height: 22px;
       margin-bottom: 20px;
     }
+
     p {
       font-size: 14px;
       line-height: 22px;

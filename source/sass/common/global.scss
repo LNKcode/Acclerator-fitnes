@@ -1,5 +1,8 @@
 /* здесь используйте глобальные селекторы img, body, html и так далее */
 body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
   font-family: $main-font;
   font-size: 16px;
   color: #102654;
@@ -10,6 +13,10 @@ body {
   position: relative;
   scroll-behavior: smooth;
   font-weight: 300;
+}
+
+main {
+  flex-grow: 1;
 }
 
 *,
@@ -29,3 +36,15 @@ a {
   text-decoration: none;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}

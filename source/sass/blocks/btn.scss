@@ -32,19 +32,19 @@
     color: #102654;
   }
 
-  &.btn--disabled,
-  &:disabled,
-  &.btn--disabled:hover,
-  &:disabled:hover,
-  &.btn--disabled:active,
-  &:disabled:active,
-  &.btn--disabled:focus-visible,
-  &:disabled:focus-visible {
+  &:disabled {
     background: transparent;
     color: #ffffff;
     border-color: #ffffff;
     opacity: 0.5;
   }
+}
+
+.btn--white.btn--disabled {
+  background: transparent;
+  color: #ffffff;
+  border-color: #ffffff;
+  opacity: 0.5;
 }
 
 .btn--dark {
@@ -54,7 +54,7 @@
 
   &:hover {
     color: #ffffff;
-    background: linear-gradient(97.05deg, #ED0233 17.6%, #003EB7 95.31%);
+    background: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
     outline: none;
   }
 
@@ -66,20 +66,13 @@
   }
 
   &:active {
-    background: linear-gradient(97.05deg, #ED0233 17.6%, #003EB7 95.31%);
+    background: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
     color: rgba(255, 255, 255, 0.7);
     border-color: transparent;
     outline: none;
   }
 
-  &.btn--disabled,
-  &:disabled,
-  &.btn--disabled:hover,
-  &:disabled:hover,
-  &.btn--disabled:active,
-  &:disabled:active,
-  &.btn--disabled:focus-visible,
-  &:disabled:focus-visible {
+  &:disabled {
     background: transparent;
     color: #ffffff;
     outline-color: #ffffff;
@@ -87,3 +80,9 @@
   }
 }
 
+.btn--dark.btn--disabled {
+  background: transparent;
+  color: #ffffff;
+  outline-color: #ffffff;
+  opacity: 0.5;
+}

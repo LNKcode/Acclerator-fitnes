@@ -54,26 +54,31 @@
   height: 72px;
   border: none;
   border-radius: 50%;
-  background: linear-gradient(97.05deg, #ED0233 17.6%, #003EB7 95.31%);
+  background: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
   cursor: pointer;
 
-  &:before {
+  &::before {
     @include pseudo;
+
     width: 100px;
     height: 100px;
     border-radius: 50%;
     border: 2px solid rgba(237, 2, 51, 0.2);
+
     @include transform-center;
   }
 
   &::after {
     @include pseudo;
+
     width: 17px;
     height: 17px;
     background-color: #ffffff;
     mask-image: url("../../img/btn-arrow.svg");
     mask-size: 13px 15px;
+
     @include transform-center;
+
     mask-repeat: no-repeat;
     mask-position: left 4px center;
   }
@@ -144,7 +149,6 @@
 }
 
 @media (max-width: $tablet-width) {
-
   .about {
     text-align: center;
     padding-top: 60px;
@@ -172,7 +176,7 @@
   }
 
   .about__media {
-    padding: 0 0 85px 0;
+    padding: 0 0 85px;
   }
 
   .about__video-picture {
@@ -265,7 +269,6 @@
   .about__video-picture {
     width: 320px;
     height: 170px;
-
   }
 
   .about__img {

@@ -24,15 +24,10 @@ function setupVideo(video) {
 }
 
 function convertToEmbedURL(url) {
-  // Проверяем, что ссылка начинается с короткого формата
   if (url.startsWith('https://youtu.be/')) {
-    // Извлекаем ID видео, который идет после "https://youtu.be/"
     const videoId = url.split('youtu.be/')[1];
-    // Формируем новую ссылку с embed и параметром autoplay=1
     return `https://www.youtube.com/embed/${videoId}?autoplay=1`;
   } else {
-    // Если формат ссылки не тот, возвращаем исходную ссылку или предупреждение
-    console.error('Неправильный формат ссылки');
     return url;
   }
 }
@@ -48,5 +43,4 @@ function createIframe(id) {
   return iframe;
 }
 
-export {findVideos};
-
+export { findVideos };

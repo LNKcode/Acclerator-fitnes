@@ -1,5 +1,5 @@
 .hero {
-  background: linear-gradient(90deg, #1C3477 0%, #1C3477 0.01%, #1A3578 39.11%, #73184B 75.5%, #B4022A 100%);
+  background: linear-gradient(90deg, #1c3477 0%, #1c3477 0.01%, #1a3578 39.11%, #73184b 75.5%, #b4022a 100%);
   color: #ffffff;
   padding-top: 116px;
   padding-bottom: 120px;
@@ -30,6 +30,7 @@
 
 .hero__list {
   @include list;
+
   font-weight: 400;
   font-size: 14px;
   line-height: 22px;
@@ -54,7 +55,6 @@
   display: block;
   margin-left: auto;
   width: 270px;
-
 }
 
 .hero__content {

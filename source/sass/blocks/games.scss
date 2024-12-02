@@ -88,7 +88,6 @@
 }
 
 @media (max-width: $tablet-width) {
-
   .games__container {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -168,6 +167,8 @@
   .games__description {
     font-size: 16px;
     line-height: 20px;
+    margin-top: 15px;
+    margin-bottom: 17px;
   }
 
   .games__link {
@@ -175,7 +176,6 @@
   }
 
   .games__data-time {
-
     &:first-child {
       margin-bottom: 5px;
     }
@@ -183,11 +183,6 @@
     span {
       padding: 0;
     }
-  }
-
-  .games__description {
-    margin-top: 15px;
-    margin-bottom: 17px;
   }
 
   .games__image {

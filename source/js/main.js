@@ -6,6 +6,8 @@ import { findVideos } from './video.js';
 import { toggleTabs } from './toggle-tabs.js';
 import { swiperJs } from './juri-slider.js';
 import { toggleAccordion } from './accordion.js';
+import { swiperReviewsJs } from './reviews-slide.js';
+import { formValid } from './error-input.js';
 
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -13,4 +15,6 @@ document.addEventListener('DOMContentLoaded', () => {
   toggleTabs();
   swiperJs();
   toggleAccordion();
+  swiperReviewsJs();
+  formValid();
 });

@@ -3,7 +3,7 @@ import { Navigation } from 'swiper/modules';
 
 
 function swiperJs() {
-  const swiper = new Swiper('.juri .swiper', {
+  new Swiper('.juri .swiper', {
     modules: [Navigation],
     slidesPerView: 1,
     spaceBetween: 20,

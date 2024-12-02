@@ -75,6 +75,7 @@
 
     &::before {
       @include pseudo;
+
       border: 1px solid #ffffff;
       bottom: -3px;
       top: -10px;
@@ -149,6 +150,7 @@
 
     &::before {
       @include pseudo;
+
       border: 1px solid #1c3374;
       bottom: -3px;
       top: -10px;
@@ -279,7 +281,7 @@
 
   .offers__content {
     width: 100%;
-    padding: 30px 30px;
+    padding: 30px;
   }
 
   .offers__title {
